@@ -54,3 +54,5 @@ __pycache__/
 *.ii
 *.s
 *.i
+
+/misc/

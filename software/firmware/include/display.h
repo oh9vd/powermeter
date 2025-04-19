@@ -79,9 +79,7 @@ private:
     d.clearDisplay();
     d.setCursor(0, 0);
     d.println(F("Documents at github"));
-    d.println(F("https://github.com/oh9vd/..."));
-    d.println(F(".../hardware"));
-    d.println(F(".../powermeter-firmware"));
+    d.println(F("https://github.com/oh9vd/powermeter"));
     d.display();
   }
 

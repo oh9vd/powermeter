@@ -10,9 +10,9 @@ private:
    * @brief Reads the current RSSI value from the RSSI pin.
    *
    * Calculates RSSI voltage in millivolts based on ADC reading, avoiding floating-point arithmetic for efficiency.
-   * Accumulates raw data from ADC over a defined window (AWG_WINDOW), averages it, and shifts the result right by 2 bits for consistent scaling.
+   * Accumulates raw data from ADC over a defined window (AWG_WINDOW), and averages it
    *
-   * @return The processed and scaled RSSI value.
+   * @return The processed and averaged RSSI value.
    */
   uint16_t read()
   {

@@ -3,8 +3,8 @@
 ###################
 
 # Schematic export (PDF, SVG, etc.)
-*.pdf
-*.svg
+#*.pdf
+#*.svg
 
 # Simulation data
 *.ac
@@ -79,3 +79,6 @@ sym-lib-table
 #autosave files
 */_autosave-*.kicad*
 *_autosave-*.kicad*
+
+#lock files
+*.lck

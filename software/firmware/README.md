@@ -8,7 +8,7 @@ This project is built using PlatformIO, an open-source ecosystem for IoT develop
 ## Project Structure
 
 ```dir
-powermeter-firmware/
+firmware/
 ├── include/                 # Header files
 ├── lib/                     # Libraries
 ├── src/                     # Source files

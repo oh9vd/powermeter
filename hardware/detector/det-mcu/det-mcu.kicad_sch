@@ -1,0 +1,410 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2cb5ca08-85cf-4c9a-9869-30a88d168464")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 119.38 102.87) (xy 165.1 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c349ce5-9937-4ffe-a998-01a9387b55a8")
+	)
+	(wire
+		(pts
+			(xy 165.1 121.92) (xy 119.38 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2953b59f-b7fc-47ed-93e7-bad5d89e8c4c")
+	)
+	(wire
+		(pts
+			(xy 119.38 73.66) (xy 165.1 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ba24b3d-18d8-40c5-a764-f4d34db7f433")
+	)
+	(wire
+		(pts
+			(xy 165.1 86.36) (xy 119.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dd4a854-fe6a-4bfd-a0d0-69efe0602751")
+	)
+	(wire
+		(pts
+			(xy 119.38 77.47) (xy 165.1 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be9b4b99-b357-45af-8935-c6043ab889da")
+	)
+	(wire
+		(pts
+			(xy 119.38 99.06) (xy 165.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f42429-1015-4712-8418-bc3958862fc0")
+	)
+	(wire
+		(pts
+			(xy 119.38 90.17) (xy 165.1 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2e244d-5ba3-4a8c-af02-b419eda572f8")
+	)
+	(wire
+		(pts
+			(xy 119.38 110.49) (xy 165.1 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e60166e5-6235-4b4b-ac2b-f32909dc8fde")
+	)
+	(wire
+		(pts
+			(xy 119.38 129.54) (xy 165.1 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6993d6f-f2a7-4f8c-9318-d54ece56f3df")
+	)
+	(sheet
+		(at 165.1 67.31)
+		(size 27.94 69.85)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000055199a2c")
+		(property "Sheetname" "MCU"
+			(at 165.1 66.4714 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 165.1 137.8462 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" output
+			(at 165.1 121.92 180)
+			(uuid "0972e12a-0b54-4cff-9ff8-c7ca56b00075")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "dBV" input
+			(at 165.1 99.06 180)
+			(uuid "c374b011-b473-4d24-929f-de3454926b27")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "dBC" input
+			(at 165.1 102.87 180)
+			(uuid "748a6466-43c8-4fe2-92ea-d80d851f0aeb")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "InV" output
+			(at 165.1 86.36 180)
+			(uuid "850cee9c-186f-4bdb-8548-0713eed6ebdf")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "InC" output
+			(at 165.1 90.17 180)
+			(uuid "fd358ca4-bc1d-48a8-8c19-01bc0791a42d")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "dBVd" input
+			(at 165.1 77.47 180)
+			(uuid "2453f894-9cae-4f40-9c24-f6185d170965")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "dBCd" input
+			(at 165.1 73.66 180)
+			(uuid "fcba18ce-3a9e-4630-b143-2b95133ce4b7")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "LEVEL" input
+			(at 165.1 110.49 180)
+			(uuid "7e8254ad-145c-4c0a-b298-e5f5a551263c")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(pin "Freq" input
+			(at 165.1 129.54 180)
+			(uuid "07e5f3cc-9aad-44fa-9464-d782d31dbb26")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "det-mcu"
+				(path "/2cb5ca08-85cf-4c9a-9869-30a88d168464"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 67.31)
+		(size 31.75 69.85)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000055199a56")
+		(property "Sheetname" "RF"
+			(at 87.63 66.4714 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rf.kicad_sch"
+			(at 87.63 137.8462 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(pin "InV" input
+			(at 119.38 86.36 0)
+			(uuid "1bd03ace-0726-48da-9ae3-2adb24db8044")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "InC" input
+			(at 119.38 90.17 0)
+			(uuid "370ef278-5204-4d23-8a55-0dcb2de6d6e7")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "Freq" output
+			(at 119.38 129.54 0)
+			(uuid "84e1b774-3199-4847-8726-7afcb08aa4cb")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "dBV" output
+			(at 119.38 99.06 0)
+			(uuid "4114d5f7-40ca-4c82-970b-82a41a996e40")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "dBC" output
+			(at 119.38 102.87 0)
+			(uuid "bb0c9fa9-5b22-4b6e-a8b4-a0f5f6305514")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" input
+			(at 119.38 121.92 0)
+			(uuid "209e31b0-01be-41e9-af0c-1e127c91ed92")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "dBVd" output
+			(at 119.38 77.47 0)
+			(uuid "b8da3ee1-d8a7-4f3f-9387-146b71b03c00")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "dBCd" output
+			(at 119.38 73.66 0)
+			(uuid "c920f9c4-edbc-4d97-bd1d-d14e3de8ca4b")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(pin "LEVEL" output
+			(at 119.38 110.49 0)
+			(uuid "51413e06-c2d5-45cf-90ea-b13164fce5f0")
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "det-mcu"
+				(path "/2cb5ca08-85cf-4c9a-9869-30a88d168464"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.68 19.05)
+		(size 54.61 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00005571e2a3")
+		(property "Sheetname" "block diagram"
+			(at 106.68 18.2114 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "block diagram.kicad_sch"
+			(at 106.68 36.2462 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "det-mcu"
+				(path "/2cb5ca08-85cf-4c9a-9869-30a88d168464"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

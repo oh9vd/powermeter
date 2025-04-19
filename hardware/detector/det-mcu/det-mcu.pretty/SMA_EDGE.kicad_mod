@@ -1,0 +1,106 @@
+(footprint "SMA_EDGE"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "SMA_E"
+		(at 3.81 -5.08 0)
+		(layer "F.SilkS")
+		(uuid "17cba4e1-f3b9-4cf8-b73a-3931fd5b0e58")
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+			)
+		)
+	)
+	(property "Value" "SMA_EDGE"
+		(at 6.35 5.08 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9c69f3b7-b317-4c81-b4db-24f8241a2be9")
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "92df812c-4298-4ebd-b6da-bc17ec8322bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5457b1eb-66dd-4072-b960-8cf36df759bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(pad "1" thru_hole circle
+		(at 5.08 0)
+		(size 2.54 2.54)
+		(drill 1.7)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "2fd58616-4ccb-48cd-bac5-8a012e9238ee")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 2.54)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "d3c48e15-89e4-4eff-983f-70e1ae9fb493")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 -2.54)
+		(size 2 2)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "4cfdc614-5b4a-4b94-a63a-f97bf5d12c31")
+	)
+	(pad "4" thru_hole circle
+		(at 7.62 2.54)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "61e6a1e8-c900-42d4-98cf-7f1e6f4a4ca2")
+	)
+	(pad "5" thru_hole circle
+		(at 7.62 -2.54)
+		(size 2 2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "88cf1f62-9fd3-4115-825d-139e1325175d")
+	)
+	(embedded_fonts no)
+	(model "SMA_EDGE.wrl"
+		(offset
+			(xyz -5.206999922 -1.269999981 -3.047999954)
+		)
+		(scale
+			(xyz 1.3 1.3 1.3)
+		)
+		(rotate
+			(xyz 270 0 180)
+		)
+	)
+)

@@ -1,0 +1,81 @@
+
+# Generated files #
+###################
+
+# Schematic export (PDF, SVG, etc.)
+*.pdf
+*.svg
+
+# Simulation data
+*.ac
+*.log
+*.raw
+*.op
+*.cir
+
+# Backup files #
+################
+
+*.bak
+*.bck
+
+# Cache files #
+###############
+
+*.cache
+*.kicad_pcb-bak
+*.sch-bak
+*-rescue.lib
+
+# Temporary editor swap files #
+################################
+
+*.swp
+*.swo
+
+# Build artifacts #
+####################
+
+*_generated/*
+*.map
+
+# 3D output files #
+####################
+
+*.wrl
+*.step
+*.stp
+
+# Others #
+##########
+
+*.dcm
+fp-info-cache
+sym-lib-table
+
+# KiCad 5 specific files #
+##########################
+# If your version of KiCad generates any other specific temporary or backup files,
+# you can add patterns below to exclude them as well.
+
+# Symbol library cache
+*-cache.lib
+
+# EEschema annotation log and undo history
+*.bak-ann
+*.SchDoc
+*.SymDoc
+
+# Board view cache
+*.kicad_pcb-bkup
+
+#backup directories
+*/*/*-backups
+*/*-backups
+*/*-backup
+*/*-bak
+*/*-bkp
+
+#autosave files
+*/_autosave-*.kicad*
+*_autosave-*.kicad*

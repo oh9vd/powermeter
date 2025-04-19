@@ -1,0 +1,56 @@
+# PlatformIO specific files
+/.pio/
+.piolibdeps
+/.vscode/
+
+# C/C++ project settings
+/cMakeListsPrivate.txt
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux specific files
+.directory
+
+# Other files and folders you may want to ignore
+*.log
+*.pyc
+*.pyo
+__pycache__/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+*.sublime-settings
+*.sublime-metrics
+*.sublime-snippet
+*.sublime-completions
+*.sublime-keymap
+*.sublime-theme
+*.sublime-color-scheme
+*.sublime-build
+*.sublime-syntax
+*.sublime-macro
+*.sublime-settings
+*.sublime-project
+*.sublime-workspace
+*.sublime-metrics
+*.sublime-snippet
+*.sublime-completions
+*.sublime-keymap
+*.sublime-theme
+*.sublime-color-scheme
+*.sublime-build
+*.sublime-syntax
+*.sublime-macro  
+*.ii
+*.s
+*.i

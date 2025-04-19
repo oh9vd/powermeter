@@ -10,7 +10,6 @@
 #include "model.h"
 #include "enc.h"
 #include "freq.h"
-#include "info.h"
 #include "rssi.h"
 #include "datalogger.h"
 
@@ -20,7 +19,6 @@ Calc calc(model);
 Display disp(model);
 Enc enc(model);
 Freq freq(model);
-Info info(model);
 Rssi rssi(model);
 Time time(model);
 DataLogger logger(model);
@@ -42,7 +40,6 @@ void setup()
   calc.init();
   enc.init();
   freq.init();
-  info.init();
 }
 
 // the loop function runs over and over again until power down or reset

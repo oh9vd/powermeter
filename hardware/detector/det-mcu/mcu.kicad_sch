@@ -28883,12 +28883,6 @@
 		(uuid "5ce3c406-6eba-4492-b033-5ead72717ea7")
 	)
 	(junction
-		(at 187.96 237.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "606f09a2-6d81-436e-b751-7523905314e5")
-	)
-	(junction
 		(at 154.94 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -29326,16 +29320,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 237.49) (xy 194.31 237.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b5d1b36-4d1e-4a85-b86c-ca066197d051")
-	)
-	(wire
-		(pts
 			(xy 154.94 101.6) (xy 154.94 105.41)
 		)
 		(stroke
@@ -29676,7 +29660,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 232.41) (xy 187.96 237.49)
+			(xy 139.7 232.41) (xy 139.7 237.49)
 		)
 		(stroke
 			(width 0)
@@ -30196,7 +30180,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 237.49) (xy 187.96 237.49)
+			(xy 186.69 237.49) (xy 194.31 237.49)
 		)
 		(stroke
 			(width 0)
@@ -32925,7 +32909,7 @@
 		(uuid "e884a3a3-05a1-4d4d-a5c2-db0a3be100ff")
 	)
 	(label "VIN"
-		(at 187.96 232.41 0)
+		(at 139.7 232.41 0)
 		(effects
 			(font
 				(size 1.524 1.524)

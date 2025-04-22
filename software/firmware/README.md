@@ -1,138 +1,66 @@
-
-# Powermeter firmware
+# PowerMeter Firmware Documentation
 
 ## Overview
-
-This project is built using PlatformIO, an open-source ecosystem for IoT development. It supports multiple boards and frameworks.
+This project is the firmware for the PowerMeter device. It is built using the PlatformIO ecosystem and targets the Arduino Nano ATmega328 board. The firmware includes features for data logging, frequency measurement, RSSI monitoring, and display management.
 
 ## Project Structure
+- **LICENSE**: Licensing information for the project.
+- **platformio.ini**: Configuration file for PlatformIO.
+- **README.md**: General project information.
+- **include/**: Header files for various modules.
+  - `adc.h`: ADC-related functionality.
+  - `calc.h`: Calculation utilities.
+  - `datalogger.h`: Data logging functionality.
+  - `debug.h`: Debugging utilities.
+  - `display.h`: Display management.
+  - `enc.h`: Encoder handling.
+  - `freq.h`: Frequency measurement.
+  - `global.h`: Global definitions and constants.
+  - `model.h`: Data models.
+  - `rssi.h`: RSSI monitoring.
+  - `screen.h`: Screen management.
+  - `time.h`: Time-related utilities.
+- **lib/**: External libraries.
+- **src/**: Source code for the firmware.
+  - `main.cpp`: Main entry point of the firmware.
+- **test/**: Test-related files.
 
-```dir
-firmware/
-├── include/                 # Header files
-├── lib/                     # Libraries
-├── src/                     # Source files
-│   ├── main.cpp             # Main application code
-├── test/                    # Unit tests
-├── platformio.ini           # Project configuration file
-```
-
-## Prerequisites
-
-- **PlatformIO Core**: Make sure you have PlatformIO Core installed. You can install it from the [official website](https://platformio.org/install).
-- **IDE**: While not mandatory, using an IDE like VSCode with PlatformIO extension can ease development.
+## Dependencies
+The project uses the following libraries:
+- `ltc230x`
+- `encoder` (version 1.4.0 or higher)
+- `freqcount` (version 1.0.0 or higher)
+- `Adafruit GFX Library` (version 1.10.13 or higher)
+- `Adafruit SSD1306` (version 2.5.0 or higher)
+- `ArduinoJson` (version 6.21.5 or higher)
 
 ## Configuration
-
-PlatformIO projects are configured using the `platformio.ini` file. Here is the configuration:
-
-```ini
-[env:nanoatmega328]
-platform = atmelavr
-board = nanoatmega328
-framework = arduino
-
-upload_protocol = arduino
-upload_speed = 57600
-upload_port=$UPLOAD_PORT
-monitor_port=COM7 # change this to your platform configuration
-monitor_speed = 57600
-
-lib_deps =
-  ltc230x
-  encoder @^1.4.0
-  freqcount@^1.0.0
-  adafruit/Adafruit GFX Library@^1.10.13
-  adafruit/Adafruit SSD1306@^2.5.0
-  ArduinoJson@^6.21.5
-```
+The `platformio.ini` file contains the configuration for the project. Key settings include:
+- **Platform**: `atmelavr`
+- **Board**: `nanoatmega328`
+- **Framework**: `arduino`
+- **Upload Protocol**: `arduino`
+- **Upload Speed**: `57600`
+- **Monitor Port**: `COM7`
+- **Monitor Speed**: `57600`
 
 ## Getting Started
+1. Install [PlatformIO](https://platformio.org/).
+2. Clone the repository.
+3. Open the project in your preferred IDE.
+4. Connect the Arduino Nano to your computer.
+5. Update the `upload_port` in `platformio.ini` to match your device's port.
+6. Build and upload the firmware using PlatformIO.
 
-### Build and Upload
+## Additional Resources
+- [PlatformIO Documentation](https://docs.platformio.org/)
+- [Arduino Nano Documentation](https://store.arduino.cc/products/arduino-nano)
+- [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
+- [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306)
+- [ArduinoJson Library](https://arduinojson.org/)
 
-To build and upload the project to your board, run the following command in the project directory:
-
-```bash
-pio run --target upload
-```
-
-### Monitor Serial Output
-
-To monitor the serial output from your device, use:
-
-```bash
-pio device monitor
-```
-
-## Libraries
-
-- **ltc230x**: For Analog to Digital Converter control
-- **encoder @^1.4.0**: For Rotary encoder handling
-- **freqcount@^1.0.0**: For frequency Counter functionality
-- **adafruit/Adafruit GFX Library@^1.10.13**: For core graphics for display
-- **adafruit/Adafruit SSD1306@^2.5.0**: For Monochrome OLEDs based on SSD1306 drivers
-- **ArduinoJson@^6.21.5**: For sending the measured data as JSON format
-
-## Testing
-
-To run tests, use:
-
-```bash
-pio test
-```
-
-**Note**: There is currently no test available
-
-## Troubleshooting
-
-Include common issues and solutions:
-
-- **Compilation Errors**: Ensure all libraries are properly declared in `platformio.ini`.
-- **Upload Failures**: Verify connection and correct port settings.
-
-## Contribution
-
-To contribute to this project:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/my-feature`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/my-feature`).
-5. Open a Pull Request.
+## Contributing
+Contributions are welcome! Please follow the guidelines outlined in the `CONTRIBUTING.md` file (if available).
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- **GitHub**: [My GitHub Profile](https://github.com/oh9vd)
-
-## Acknowledgments
-
-Our project makes use of several third-party libraries. We would like to acknowledge the authors and contributors of these libraries for their valuable work:
-
-- **ltc230x**
-  - A library for interfacing with LTC230x ADCs.
-
-- **encoder @^1.4.0**
-  - Used for managing rotary encoders.
-
-- **freqcount@^1.0.0**
-  - A library for counting frequency from digital inputs.
-
-- **Adafruit GFX Library @^1.10.13**
-  - A display graphics library by Adafruit Industries.
-
-- **Adafruit SSD1306 @^2.5.0**
-  - A driver library for the Adafruit SSD1306 OLED displays.
-
-- **ArduinoJson @^6.21.5**
-  - A JSON library for Arduino and embedded C++.
-
-Each library mentioned above is subject to its own licensing terms. Please refer to their respective documentation and source code for more information on usage and licenses.
-
-## Disclaimer
-
-This project is not affiliated with any company or organization. It is a personal project and does not represent any official or endorsement of any company or organization.
+This project is licensed under the terms specified in the `LICENSE` file.
